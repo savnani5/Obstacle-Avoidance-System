@@ -1,0 +1,11 @@
+<launch>
+<arg name="x" default="-2" />
+<arg name="y" default="0" />
+
+<!-- Launch gazebo -->
+<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch">
+<arg name="x_pos" value="$(arg x)" />
+<arg name="y_pos" value="$(arg y)" />
+</include>
+
+</launch> 
