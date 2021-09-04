@@ -56,6 +56,7 @@ Follow the build instructions to build on your local system.
 - Build the workspace
   ```
   catkin build
+  source devel/setup.bash
   ```
 
 ---
