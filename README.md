@@ -1,42 +1,66 @@
 # Obstacle-Avoidance-System
-
 ## Overview
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+---
 
 ## Dependencies
+- Ubuntu 18.04 (Operating System)
+- Python 3.6.9
+- CMake (Build System)
+- ROS Melodic
+- Gazebo
+- RVIZ
+
+---
+## ROS Dependencies
+- Rospy
+- Tf
+- sensor_msgs
+- nav_msgs
+- geometry_msgs
 
 
+---
 ## Build Instructions
 Follow the build instructions to build on your local system. 
+
 - Make and initialize the catkin workspace.
-```
-mkdir -p ~/catkin_ws/src
-catkin config --init
-```
+  ```
+  mkdir -p ~/catkin_ws/src
+  catkin config --init
+  ```
 
-- Clone this repo and copy 
-git clone 
+- Clone this repo and copy the rwa2_savnani folder to the src directory in catkin_ws. 
+  ```
+  git clone https://github.com/savnani5/Obstacle-Avoidance-System.git
+  cd ~/catkin_ws/src
+  cp -R ~/Obstacle-Avoidance-System/rwa2_savnani ~/catkin_ws/src
+  ```
 
+- Build the workspace
+  ```
+  catkin build
+  ```
 
-catkin build
-```
 ---
 ## Run Instructions
- - The launch directory of the package `/rwa5_group_1` has a launch file `rwa5.launch`. All the necessary nodes will be launched within this node.
-
- ```
-source ~/ariac_ws/devel/setup.bash
-
-roslaunch rwa5_group_1 rwa5.launch load_moveit:=true
- ```
-
- - Run the rwa5 node 
- ```
-source ~/ariac_ws/devel/setup.bash
-
-rosrun rwa5_group_1 rwa5_node
- ``` 
-
+- The *my_bot_controller.launch* file has all the launch parameters. Run the following command to spawn the robot at (-2,0) position.
+  ```
+  roslaunch rwa2_savnani my_bot_controller.launch
+  ```
+- Run the folllowing command to mkae the robot navigate to position "**x**" in the map.
+  ```
+  rosrun rwa2_savnani my_bot_controller x
+  ```
 
 ---
  ## Output Video
