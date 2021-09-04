@@ -1,14 +1,15 @@
 # Obstacle-Avoidance-System
 ## Overview
+We develop a ROS package to move TurtleBot3 in a Gazebo world. It is capable of avoiding obstacles while navigating to the goal location. We can run the node with a location argument passed to the command line. Based on the argument passed, we move the robot from its current location to the goal
+location. For instance, the commands below should move the robot in this order: 0 → 1 and then 1 → 5 .
+  ```
+  rosrun rwa2_savnani my_bot_controller 1
+  ```
+  ```
+  rosrun rwa2_savnani my_bot_controller 5
+  ```
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
+![turtleBot3_world](git_images/world.png)
 
 ---
 
