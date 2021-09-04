@@ -8,15 +8,15 @@
 
 ## Build Instructions
 Follow the build instructions to build on your local system. 
-
+- Make and initialize the catkin workspace.
 ```
 mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
 catkin config --init
 ```
 
-Clone this repo 
+- Clone this repo and copy 
 git clone 
+
 
 catkin build
 ```
