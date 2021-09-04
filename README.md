@@ -9,6 +9,7 @@ We develop a ROS package to move TurtleBot3 in a Gazebo world. It is capable of 
   rosrun rwa2_savnani my_bot_controller 5
   ```
 
+### **turtlebot3_world**
 ![turtleBot3_world](git_images/sim.gif)
 
 ---
