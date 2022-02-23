@@ -69,7 +69,7 @@ Follow the build instructions to build on your local system.
   roslaunch rwa2_savnani my_bot_controller.launch
   ```
 
-- Run the folllowing command to mkae the robot navigate to position "**x**" in the map.
+- Run the following command to make the robot navigate to position "**x**" in the map.
 
   ```
   rosrun rwa2_savnani my_bot_controller x
